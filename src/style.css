@@ -1,0 +1,83 @@
+#main-container {
+  padding: 0px 0px 20px 0px;
+  background-color: #e5e5e5;
+}
+
+#container-menu {
+  display:flex;
+  padding: 0px 0px;
+  position: fixed; 
+  top: 0; 
+  width: 100%;
+  align-items: center;
+  background-color: rgb(20,33,61);
+}
+
+.custom-row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.bg-overlay {
+  background: linear-gradient(rgba(12, 21, 41, 0.8), rgba(20,33,61,.6)), url("../images/restaurant-homepage.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 450px;
+  padding-top: 1px;
+}
+
+#main-title {
+  color: #e5e5e5;
+  font-size: 50px;
+  display: block;
+  text-align: center;
+  font-family: 'Parisienne';
+  font-size: 100px;
+}
+
+.logo-small {
+  width: 375px;
+}
+
+ul {
+  text-align: center;
+  margin: 0px 50px 0px 0px;
+}
+
+li {
+  display: inline-block;
+  text-align: center;
+  margin: 0px 40px;
+  line-height: 45px;
+  font-family: nunito;
+  color: white;
+  font-weight: 700;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
+}
+
+a:hover {
+  color: #fca311;
+  cursor: default;
+}
+
+.scrolling-active {
+  padding-top: 20px;
+  transition: all 300ms ease-in-out;
+}
+
+.scrolling-active-logo {
+  width: 275px;
+  transition: all 300ms ease-in-out;
+}
+
+#main-logo {
+  width: 130px;
+  margin: 130px auto 0px;
+}
