@@ -12,6 +12,7 @@
   width: 100%;
   align-items: center;
   background-color: rgb(20,33,61);
+  z-index: 9;
 }
 
 .custom-row {
@@ -33,7 +34,7 @@
 }
 
 .scrolling-active {
-  padding-top: 20px;
+  padding-top: 10px;
   transition: all 300ms ease-in-out;
 }
 
@@ -75,15 +76,42 @@ li {
   font-weight: 700;
 }
 
-a {
+.menu-link {
   color: white;
   text-decoration: none;
   transition: all 200ms ease-in-out;
 }
 
-a:hover {
+.menu-link:hover {
   color: #fca311;
   cursor: default;
+}
+
+.button-link {
+  appearance: button;
+  -ms-progress-appearance: button;
+  -moz-appearance: button;
+  -webkit-appearance: button;
+  display: block;
+  margin: 20px auto;
+  width: 200px;
+  border: none;
+  border-radius: 30px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 2px 2px 5px rgb(0 0 0 / 30%);
+  transition: all 200ms ease-in-out;
+  text-decoration: none;
+  }
+
+#menu-button {
+  color: #14213d;
+  background-color: rgba(229, 229, 229, 0.9);
+}
+
+#menu-button:hover{
+  background-color:#14213d;
+  color:#fca311;
 }
 
 #main-logo {
@@ -114,6 +142,7 @@ h2 {
   font-family: 'Nunito';
   text-align: justify;
 }
+
 
 /* slideshow */
 * {box-sizing: border-box;}
@@ -158,22 +187,179 @@ h2 {
   animation-fill-mode: both;
 }
 
+/* About us slideshow */
+#location-slideshow {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 560px;
+  animation: animate 16s ease-in-out infinite;
+  background-size: cover;
+  background-position: 50%;
+} 
+
+.outer {
+  height: 560px;
+  background: rgba(0,0,0,0.7);
+}
+
+.details {
+  text-align: center;
+}
+
+#about-us {
+  color:#e5e5e5;
+  padding: 130px 0px 30px 0px;
+}
+
+
+.about-us-text {
+  color:#e5e5e5;
+  text-align: justify;
+  line-height: 2.2;
+  padding: 0px 350px 10px;
+}
+
+#button-about-us {
+  background-color: rgba(229, 229, 229, 0);
+  border:  1px solid rgba(229, 229, 229, 0.5);
+  color: rgb(229, 229, 229);
+}
+
+#button-about-us:hover {
+  background-color:#14213d;
+  color:#fca311;
+}
+
+
+
+
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
 }
 
-@media only screen and (max-width: 300px) {
-  .slideshow-container {width: 200px};
+@keyframes animate {
+  0%, 100% {
+    background-image: url(../images/restaurant-slideshow-1.jpg)
+  }
+
+  25% {
+    background-image: url(../images/restaurant-slideshow-2.jpg)
+  }
+
+  50% {
+    background-image: url(../images/restaurant-slideshow-3.jpg)
+  }
+
+  75% {
+    background-image: url(../images/restaurant-slideshow-4.jpg)
+  }
 }
 
-@media screen and (max-width:300px) {
-  h2 {font-size: 20px};
-  .col {flex: 0 0 100%;};
+
+@media screen and (max-width:480px) {
+  #main-logo {
+    width: 100px;
+    margin: 175px auto 0px;
+  }
+
+  #main-title {font-size: 70px;}
+
+  #menu-section {
+    margin: 50px 25px;
+  }
+
+  h2 {
+    font-size: 20px
+  }
+
+  .text-description {
+    font-size: 13px;
+  }
+
+  .button-link {
+    font-size: 14px;
+    width: 165px;
+    padding:5px 10px;
+    margin: 20px auto 30px;
+  }
+
+  .slideshow-container {width: 250px}
+
+  #about-us {font-size: 20px;
+  padding: 55px 0px 30px 0px}
+  
+  .about-us-text {font-size: 12px;
+  padding: 0px 70px;}
+
+  #button-about-us:hover {
+    color:#fca311;
+  }
+
+  #menu-button:hover{
+    background-color:#14213d;
+    color:#fca311;
+  }
 }
 
-@media screen and (max-width:900px) {
-  h2 {font-size: 25px};
-  .col {flex: 0 0 100%;};
+
+@media screen and (min-width:481px) and (max-width:768px) {
+  #main-logo {
+    width: 120px;
+    margin: 150px auto 20px;
+  }
+
+  #main-title {
+    font-size: 75px;}
+
+  #menu-section {
+    margin: 50px 40px;
+  }
+
+  h2 {
+    font-size:37px
+  }
+  .text-description {
+    font-size: 15px;
+  }
+
+  .button-link {
+    font-size: 16px;
+    width: 195px;
+    padding: 10px 20px;
+    margin: 20px auto 45px;
+  }
+
+  .slideshow-container {
+    width: 300px
+  }
+
+  #about-us {
+    font-size: 37px;
+    padding: 65px 0px 30px 0px
+  }
+  
+  .about-us-text {
+    font-size: 15px;
+    padding: 0px 70px;
+  }
+
+  #button-about-us:hover {
+    color:#fca311;
+  }
+
+  #menu-button:hover{
+    background-color:#14213d;
+    color:#fca311;
+  }
+
+  #location-slideshow {
+    height:720px
+  }
+
+  .outer {
+    height:720px;
+  }
 }
 
