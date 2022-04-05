@@ -258,20 +258,28 @@ h2 {
 }
 
 
-@media screen and (max-width:480px) {
-  #main-logo {
-    width: 100px;
-    margin: 175px auto 0px;
+@media screen and (max-width:374px) {
+  .logo-small {
+    width: 200px;
+  }
+  
+  .menu-link {
+    font-size: 10px;
   }
 
-  #main-title {font-size: 70px;}
+  #main-logo {
+    width: 100px;
+    margin: 175px auto 20px;
+  }
+
+  #main-title {font-size: 60px}
 
   #menu-section {
     margin: 50px 25px;
   }
 
   h2 {
-    font-size: 20px
+    font-size: 25px
   }
 
   .text-description {
@@ -287,11 +295,19 @@ h2 {
 
   .slideshow-container {width: 250px}
 
-  #about-us {font-size: 20px;
-  padding: 55px 0px 30px 0px}
+  #location-slideshow {
+    height: 700px;
+  }
+
+  .outer {
+    height: 700px;
+  }
+
+  #about-us {
+  padding: 40px 0px 20px 0px}
   
   .about-us-text {font-size: 12px;
-  padding: 0px 70px;}
+  padding: 0px 50px;}
 
   #button-about-us:hover {
     color:#fca311;
@@ -303,8 +319,178 @@ h2 {
   }
 }
 
+@media screen and (min-width:375px) and (max-width:424px) {
+  .logo-small {
+    width: 200px;
+  }
+  
+  .menu-link {
+    font-size: 10px;
+  }
 
-@media screen and (min-width:481px) and (max-width:768px) {
+  .scrolling-inactive {
+    transition: all 200ms ease-in;
+  }
+  
+  .scrolling-inactive-logo {
+    transition: all 200ms ease-in;
+  }
+  
+  .scrolling-active {
+    padding-top: 10px;
+    transition: all 300ms ease-in-out;
+  }
+  
+  .scrolling-active-logo {
+    width: 15%;
+    transition: all 300ms ease-in-out;
+  }
+
+  #main-logo {
+    width: 100px;
+    margin: 175px auto 20px;
+  }
+
+  #main-title {font-size: 60px}
+
+  #menu-section {
+    margin: 50px 25px;
+  }
+
+  h2 {
+    font-size: 25px
+  }
+
+  .text-description {
+    font-size: 13px;
+  }
+
+  .button-link {
+    font-size: 14px;
+    width: 165px;
+    padding:5px 10px;
+    margin: 20px auto 30px;
+  }
+
+  .slideshow-container {width: 250px}
+
+  #location-slideshow {
+    height: 620px;
+  }
+
+  .outer {
+    height: 620px;
+  }
+
+  #about-us {
+  padding: 40px 0px 20px 0px}
+  
+  .about-us-text {font-size: 12px;
+  padding: 0px 50px;}
+
+  #button-about-us {
+    padding: 10px 10px;
+    width: 150px;
+  }
+
+}
+
+@media screen and (min-width:425px) and (max-width:767px) {
+  
+  .logo-small {
+    width: 250px;
+  }
+  
+  .menu-link {
+    font-size: 12px;
+  }
+
+  .scrolling-inactive {
+    transition: all 200ms ease-in;
+  }
+  
+  .scrolling-inactive-logo {
+    transition: all 200ms ease-in;
+  }
+  
+  .scrolling-active {
+    padding-top: 10px;
+    transition: all 300ms ease-in-out;
+  }
+  
+  .scrolling-active-logo {
+    width: 15%;
+    transition: all 300ms ease-in-out;
+  }
+
+  #main-logo {
+    width: 120px;
+    margin: 175px auto 20px;
+  }
+  
+  #main-title {
+    font-size: 62px
+  }
+  
+  #menu-section {
+    margin: 50px 20px;
+  }
+
+  h2 {
+    font-size: 38px;
+  }
+
+  .text-description {
+    font-size: 14px;
+  }
+
+  #menu-button {
+    font-size: 14px;
+    margin: 30px auto;
+  }
+
+  #location-slideshow {
+    height: 700px;
+  }
+
+  .outer {
+    height: 700px;
+  }
+
+  #about-us {
+  padding: 40px 0px 20px 0px}
+  
+  .about-us-text {font-size: 14px;
+  padding: 0px 50px;}
+
+  #button-about-us {
+    padding: 10px 10px;
+    width: 150px;
+    font-size: 14px;
+  }
+}
+
+
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+  .scrolling-inactive {
+    transition: all 200ms ease-in;
+  }
+  
+  .scrolling-inactive-logo {
+    transition: all 200ms ease-in;
+  }
+  
+  .scrolling-active {
+    padding-top: 10px;
+    transition: all 300ms ease-in-out;
+  }
+  
+  .scrolling-active-logo {
+    width: 15%;
+    transition: all 300ms ease-in-out;
+  }
+  
   #main-logo {
     width: 120px;
     margin: 150px auto 20px;
@@ -337,12 +523,21 @@ h2 {
 
   #about-us {
     font-size: 37px;
-    padding: 65px 0px 30px 0px
+    padding: 68px 0px 30px 0px
   }
   
   .about-us-text {
+    font-size: 16px;
+    padding: 15px 70px;
+  }
+
+  #button-about-us {
+    margin: 0px auto 0px;
     font-size: 15px;
-    padding: 0px 70px;
+    width: 155px;
+    background-color: rgba(229, 229, 229, 0);
+    border: 1px solid rgba(229, 229, 229, 0.5);
+    color: rgb(229, 229, 229);
   }
 
   #button-about-us:hover {
@@ -363,3 +558,43 @@ h2 {
   }
 }
 
+@media screen and (min-width:1024px) and (max-width: 1440px) {
+  
+  .scrolling-inactive {
+    transition: all 200ms ease-in;
+  }
+  
+  .scrolling-inactive-logo {
+    transition: all 200ms ease-in;
+  }
+  
+  .scrolling-active {
+    padding-top: 10px;
+    transition: all 300ms ease-in-out;
+  }
+  
+  .scrolling-active-logo {
+    width: 15%;
+    transition: all 300ms ease-in-out;
+  }
+  
+  #about-us {
+    font-size: 40px;
+    padding: 50px 0px 10px 0px
+  }
+  
+  .about-us-text {
+    font-size: 16px;
+    padding: 20px 200px 10px;
+    line-height: 2.3;
+  }
+
+  #button-about-us {
+    margin: 0px auto;
+    font-size: 16px;
+    width: 160px;
+    background-color: rgba(229, 229, 229, 0);
+    border: 1px solid rgba(229, 229, 229, 0.5);
+    color: rgb(229, 229, 229);
+  }
+}
