@@ -1,7 +1,38 @@
+/*structure and general */
 #main-container {
   padding: 0px 0px 20px 0px;
   background-color: #e5e5e5;
 }
+
+.button-link {
+  appearance: button;
+  -ms-progress-appearance: button;
+  -moz-appearance: button;
+  -webkit-appearance: button;
+  display: block;
+  margin: 20px auto;
+  width: 200px;
+  border: none;
+  border-radius: 30px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 2px 2px 5px rgb(0 0 0 / 30%);
+  transition: all 200ms ease-in-out;
+  text-decoration: none;
+  font-weight: 700;
+  }
+
+h2 {
+  text-align: center;
+  font-size: 43px;
+  font-family: lora;
+  color: #14213d;
+}
+
+
+/* nav bar */
+
+/* */
 
 #container-menu {
   display:flex;
@@ -23,42 +54,6 @@
 
 .logo-small {
   width: 375px;
-}
-
-.scrolling-inactive {
-  transition: all 200ms ease-in;
-}
-
-.scrolling-inactive-logo {
-  transition: all 200ms ease-in;
-}
-
-.scrolling-active {
-  padding-top: 10px;
-  transition: all 300ms ease-in-out;
-}
-
-.scrolling-active-logo {
-  width: 15%;
-  transition: all 300ms ease-in-out;
-}
-
-.bg-overlay {
-  background: linear-gradient(rgba(12, 21, 41, 0.8), rgba(20,33,61,.6)), url("../images/restaurant-homepage.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  height: 450px;
-  padding-top: 1px;
-}
-
-#main-title {
-  color: #e5e5e5;
-  font-size: 50px;
-  display: block;
-  text-align: center;
-  font-family: 'Parisienne';
-  font-size: 100px;
 }
 
 ul {
@@ -87,37 +82,50 @@ li {
   cursor: default;
 }
 
-.button-link {
-  appearance: button;
-  -ms-progress-appearance: button;
-  -moz-appearance: button;
-  -webkit-appearance: button;
-  display: block;
-  margin: 20px auto;
-  width: 200px;
-  border: none;
-  border-radius: 30px;
-  padding: 10px;
-  text-align: center;
-  box-shadow: 2px 2px 5px rgb(0 0 0 / 30%);
-  transition: all 200ms ease-in-out;
-  text-decoration: none;
-  }
-
-#menu-button {
-  color: #14213d;
-  background-color: rgba(229, 229, 229, 0.9);
+.scrolling-inactive {
+  transition: all 200ms ease-in;
 }
 
-#menu-button:hover{
-  background-color:#14213d;
-  color:#fca311;
+.scrolling-inactive-logo {
+  transition: all 200ms ease-in;
+}
+
+.scrolling-active {
+  padding-top: 10px;
+  transition: all 300ms ease-in-out;
+}
+
+.scrolling-active-logo {
+  width: 15%;
+  transition: all 300ms ease-in-out;
+}
+
+/* Header */
+
+.bg-overlay {
+  background: linear-gradient(rgba(12, 21, 41, 0.8), rgba(20,33,61,.6)), url("../images/restaurant-homepage.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 450px;
+  padding-top: 1px;
 }
 
 #main-logo {
   width: 130px;
   margin: 130px auto 0px;
 }
+
+#main-title {
+  color: #e5e5e5;
+  font-size: 50px;
+  display: block;
+  text-align: center;
+  font-family: 'Parisienne';
+  font-size: 100px;
+}
+
+/* Menu section */
 
 #menu-section {
   margin: 50px 130px;
@@ -128,11 +136,14 @@ li {
 }
 
 
-h2 {
-  text-align: center;
-  font-size: 43px;
-  font-family: lora;
+#menu-button {
   color: #14213d;
+  background-color: rgba(229, 229, 229, 0.9);
+}
+
+#menu-button:hover{
+  background-color:#14213d;
+  color:#fca311;
 }
 
 .text-description {
@@ -156,7 +167,7 @@ h2 {
   border-radius: 10px;
 }
 
-/* Slideshow container */
+  /* Slideshow container */
 .slideshow-container {
   max-width: 430px;
   position: relative;
@@ -165,7 +176,7 @@ h2 {
   border-radius: 10px;
 }
 
-/* The dots/bullets/indicators */
+  /* The dots/bullets/indicators */
 .dot {
   height: 15px;
   width: 15px;
@@ -180,26 +191,27 @@ h2 {
   background-color: #717171;
 }
 
-/* Fading animation */
+  /* Fading animation */
 .fade {
   animation-name: fade;
   animation-duration: 2s;
   animation-fill-mode: both;
 }
 
+/* About section */
 /* About us slideshow */
 #location-slideshow {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 560px;
+  height: 600px;
   animation: animate 16s ease-in-out infinite;
   background-size: cover;
   background-position: 50%;
 } 
 
 .outer {
-  height: 560px;
+  height: 600px;
   background: rgba(0,0,0,0.7);
 }
 
@@ -211,7 +223,6 @@ h2 {
   color:#e5e5e5;
   padding: 130px 0px 30px 0px;
 }
-
 
 .about-us-text {
   color:#e5e5e5;
@@ -231,9 +242,12 @@ h2 {
   color:#fca311;
 }
 
+.app-icon {
+  max-width:30px;
+  margin: 0px 5px;
+}
 
-
-
+/* keyframes */
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
@@ -256,7 +270,6 @@ h2 {
     background-image: url(../images/restaurant-slideshow-4.jpg)
   }
 }
-
 
 @media screen and (max-width:374px) {
   .logo-small {
