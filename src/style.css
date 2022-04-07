@@ -243,6 +243,53 @@ li {
 }
 
 /* Delivery and Booking */
+
+ul .delivery-booking-grid {
+  margin: 0;
+  padding: 0;
+}
+
+ul .delivery-booking-grid li {
+  list-style: none;
+}
+
+ul .delivery-booking-grid li >* {
+  margin: 1rem;
+}
+
+:focus {
+  box-shadow: 0 0 0 0.25rem black;
+}
+
+.delivery-booking-grid {
+  display:grid;
+  gap: 1rem;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(auto-fit, 20rem);
+  justify-content: center;
+}
+
+.delivery-booking-grid > * {
+  align-items: flex-start;
+  background: red;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.fullwidth {
+  grid-column: 1 / -1;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.fullwidth, .is-selected {
+  background-color: aquamarine;
+}
+
+/*
 .delivery-booking-wrapper {
   margin: 50px 155px;
 }
@@ -277,6 +324,7 @@ li {
   max-width:30px;
   margin: 0px 5px;
 }
+*/
 
 
 /* keyframes */
