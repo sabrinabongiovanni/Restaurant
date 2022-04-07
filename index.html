@@ -103,14 +103,113 @@
       </div>
       <!--End of about us-->
 
-      <div class="row">
-        <div class="col-lg-12 container" id="form-container">
-          Prova
+      <!--Delivery and Booking-->
+
+      <ul class="delivery-booking-grid">
+        <li>
+          <p>1</p>
+          <button type="button" data-quick-view>Servizio Delivery</button>
+        </li>
+
+        <li class="fullwidth is-hidden" id="quickview-01">
+          <button type="button" data-close>Close</button>
+          <p>Ordina</p>
+        </li>
+
+        <li>
+          <p>2</p>
+        </li>
+        
+        <li>3</li>
+
+        <li>
+          <p>4</p>
+          <button type="button" data-quick-view>Make a reservation</button>
+        </li>
+
+        <li class="fullwidth is-hidden" id="quickview-04">
+          <button type="button" data-close>Close</button>
+          <p>Make a reservation</p>
+        </li>
+      </ul>
+
+      <!--
+      <div class="row delivery-booking-wrapper">
+        <div class="col-lg-6 col-md-12 delivery-booking-cells">
+          <h2>Servizio Delivery</h2>
+          <div>
+            <p class="delivery-text">Ordina per telefono:</p>
+            <br />
+            <p class="delivery-text" id="phone-number">001 - 555 555</p>
+            <br />
+          </div>
+          <div>
+            <p class="delivery-text">Ordina da app:</p>
+            <br />
+            <img src="images/icons/deliveroo.svg" class="app-icon"> 
+            <img src="images/icons/glovo.png" class="app-icon"> 
+            <img src="images/icons/just.svg" class="app-icon"> 
+            <img src="images/icons/uber-eats.svg" class="app-icon">
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-12 delivery-booking-cells" id="booking-table">
+          <h2>Prenota un tavolo</h2>
+          <p>Chiamaci al numero 001 - 555 555 o utilizza il modulo sottostante per prenotare un tavolo.</p>
+          <form>
+            <div class="row">
+              <div class="col">
+                <label for="email-input">Indirizzo email</label>
+                <input type="email" class="form-control" id="email-input" placeholder="">
+              </div>
+              <div class="col">
+                <label for="phone-input">Telefono</label>
+                <input type="tel" class="form-control" id="phone-input" placeholder="">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-2">
+                <label for="people-number">N° persone</label>
+                <select class="form-control" id="people-number">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                </select>
+              </div>
+              <div class="col-3">
+                <label for="date">Data</label>
+                <br />
+                <input type="date" id="date">
+              </div>
+              <div class="col-3">
+                <label for="time">Orario</label>
+                <select class="form-control" id="time">
+                  <option>19.00</option>
+                  <option>19.30</option>
+                  <option>20.00</option>
+                  <option>20.30</option>
+                  <option>21.00</option>
+                  <option>21.30</option>
+                </select>
+              </div>
+            </div>
+            <button type="submit">Richiedi tavolo</button>
+          </form>
         </div>
       </div>
 
+      -->
     </div>
-  </div>  
+
+  </div>
+</div>  
 
   <script src="src/index.js"></script>
 </body>
