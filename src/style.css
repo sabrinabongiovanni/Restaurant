@@ -150,7 +150,7 @@ li {
   margin: 20px 10px;
   font-size: 16px;
   line-height: 2.2;
-  font-family: 'Nunito';
+  font-family: Nunito;
   text-align: justify;
 }
 
@@ -242,10 +242,42 @@ li {
   color:#fca311;
 }
 
+/* Delivery and Booking */
+.delivery-booking-wrapper {
+  margin: 50px 155px;
+}
+
+.delivery-booking-wrapper h2 {
+  font-size: 35px;
+  margin: 0px auto 40px auto;
+}
+
+.delivery-booking-cells {
+  padding: 35px 70px;
+  text-align: center;
+}
+
+#booking-table {
+  background-color: rgba(255,255,255, 0.5);
+}
+
+.delivery-text {
+  font-size: 18px;
+  font-family: Nunito;
+  margin: 0px auto;
+}
+
+#phone-number {
+  font-size: 20px;
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+
 .app-icon {
   max-width:30px;
   margin: 0px 5px;
 }
+
 
 /* keyframes */
 @keyframes fade {
