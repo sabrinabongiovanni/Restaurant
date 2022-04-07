@@ -289,6 +289,8 @@ ul .delivery-booking-grid li >* {
   background-color: aquamarine;
 }
 
+/* https://css-tricks.com/expandable-sections-within-a-css-grid/ */
+
 /*
 .delivery-booking-wrapper {
   margin: 50px 155px;
