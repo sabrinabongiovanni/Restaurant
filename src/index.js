@@ -26,6 +26,18 @@ function showSlides() {
   setTimeout(showSlides, 4000); // Change image every 6 seconds
 }
 
+/*Delivery and Booking*/
+
+let deliveryButton = document.getElementById('delivery-button');
+
+deliveryButton.addEventListener("click", showDeliveryRow);
+
+function showDeliveryRow() {
+  let deliveryRow = document.getElementbyId('delivery-row');
+  deliveryRow.classList.toggle("is-hidden");
+}
+
+/*
 const quickViewButtons = document.querySelectorAll('[data-quick-view');
 const closeButtons = document.querySelectorAll('[data-close]');
 const fullwidthCards = document.querySelectorAll('.fullwidth');
@@ -81,4 +93,4 @@ quickViewButtons.forEach(quickView => {
           closeQuickView(toggle, toggleParent, fullwidth);
           toggle.focus(); 
       });
-  });
+  });*/

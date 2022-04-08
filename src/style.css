@@ -212,7 +212,7 @@ li {
 
 .outer {
   height: 600px;
-  background: rgba(0,0,0,0.7);
+  background: rgba(12, 21, 41, 0.8);
 }
 
 .details {
@@ -244,6 +244,51 @@ li {
 
 /* Delivery and Booking */
 
+.del-book-row {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  margin: 50px;
+  justify-content: space-evenly;
+}
+
+.boxes {
+  background-image: url(../images/prova.jpg);
+  background-size: cover;
+  background-position: 100%;
+  width: 300px;
+  height: 300px;
+  text-align: center; 
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+}
+
+.overlay-boxes {
+  background-color: rgba(12, 21, 41, 0.8);
+}
+
+h3 {
+  color:#fca311;
+  font-size: 30px;
+  font-family: Parisienne;
+  line-height: 300px;
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+}
+
+h3:hover {
+  font-size: 50px;
+  line-break:normal;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.is-displayed {
+  display: flex;
+}
+
+/*
 ul .delivery-booking-grid {
   margin: 0;
   padding: 0;
@@ -288,6 +333,7 @@ ul .delivery-booking-grid li >* {
 .fullwidth, .is-selected {
   background-color: aquamarine;
 }
+*/
 
 /* https://css-tricks.com/expandable-sections-within-a-css-grid/ */
 
