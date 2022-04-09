@@ -28,14 +28,52 @@ function showSlides() {
 
 /*Delivery and Booking*/
 
-let deliveryButton = document.getElementById('delivery-button');
+let deliveryButton = document.querySelector("#delivery-button");
+let bookingButton = document.querySelector("#booking-button");
 
-deliveryButton.addEventListener("click", showDeliveryRow);
+let delivery = "delivery";
+let booking = "booking";
 
-function showDeliveryRow() {
-  let deliveryRow = document.getElementbyId('delivery-row');
-  deliveryRow.classList.toggle("is-hidden");
+deliveryButton.addEventListener("click", function () {
+  showFullwidthBox(delivery)
+});
+bookingButton.addEventListener("click", function() {
+  showFullwidthBox(booking)
+});
+
+function showFullwidthBox(actionType) {
+  let deliveryBox = document.querySelector("#delivery-box");
+  let bookingBox = document.querySelector("#booking-box");
+  let boxes = document.querySelectorAll(".boxes");
+  if (actionType == "delivery") {
+    deliveryBox.classList.toggle('is-hidden');
+  } else {
+    bookingBox.classList.toggle('is-hidden');
+  }
+
+  for(var i = 0; i < boxes.length; i++) {
+    if (actionType == "delivery") {
+      if (i != 0) {
+        boxes[i].classList.toggle('is-hidden');
+      }
+    } else {
+      if (i != 2) {
+        boxes[i].classList.toggle('is-hidden');
+        console.log("ciao");
+      }
+    }
+  }
 }
+
+let bookTableButton = document.querySelector("#book-table-button");
+
+bookTableButton.addEventListener("click", bookTable);
+
+function bookTable(event) {
+  event.preventDefault;
+  alert("Grazie per la prenotazione, ti contatteremo al più presto per confermare!")
+}
+
 
 /*
 const quickViewButtons = document.querySelectorAll('[data-quick-view');

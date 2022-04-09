@@ -111,25 +111,97 @@
             <h3 id="delivery-button">Delivery</h3>
           </div>
           </div>
+
+          <div class="col-lg-9 col-md-9 fullwidth-column is-hidden" id="delivery-box">
+            <h2 class="delivery-booking-title">Servizio Delivery</h2>
+            <div>
+            <p class="delivery-text">Ordina per telefono:</p>
+            <br />
+            <p class="delivery-text" id="phone-number">001 - 555 555</p>
+            <br />
+          </div>
+          <div>
+            <p class="delivery-text">Ordina da app:</p>
+            <br />
+            <a href="https://deliveroo.it/it/" target="_blank"><img src="images/icons/deliveroo.svg" class="app-icon"></a> 
+            <a href="https://glovoapp.com/" target="_blank"><img src="images/icons/glovo.png" class="app-icon"></a> 
+            <a href="https://www.justeat.it/" target="_blank"><img src="images/icons/just.svg" class="app-icon"></a> 
+            <a href="https://www.ubereats.com/it" target="_blank"><img src="images/icons/uber-eats.svg" class="app-icon"></a>
+          </div>
+          </div>
+        
           
           <div class="col-lg-3 col-md-3 boxes" id="box-2">
+          </div>
+
+          <div class="col-lg-9 col-md-9 fullwidth-column is-hidden" id="booking-box">
+            <h2 class="delivery-booking-title">Prenota un tavolo</h2> 
+            <p>Chiamaci al numero 001 - 555 555 o utilizza il modulo sottostante per prenotare un tavolo.</p>
+            <form>
+              <div class="row" id="form-row">
+                <div class="col">
+                  <label for="email-input">Indirizzo email</label>
+                  <input type="email" class="form-control" id="email-input" placeholder="">
+                </div>
+                <div class="col">
+                  <label for="phone-input">Telefono</label>
+                  <input type="tel" class="form-control" id="phone-input" placeholder="">
+                </div>
+              </div>
+              <div class="row" id="form-row">
+                <div class="col-2">
+                  <label for="people-number">N° persone</label>
+                  <select class="form-control" id="people-number">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                  </select>
+                </div>
+                <div class="col-3">
+                  <label for="date">Data</label>
+                  <br />
+                  <input type="date" id="date">
+                </div>
+                <div class="col-3">
+                  <label for="time">Orario</label>
+                  <select class="form-control" id="time">
+                    <option>19.00</option>
+                    <option>19.30</option>
+                    <option>20.00</option>
+                    <option>20.30</option>
+                    <option>21.00</option>
+                    <option>21.30</option>
+                  </select>
+                </div>
+
+                <div class="col-2">
+                  <button type="button" id="book-table-button">Richiedi tavolo</button>
+                </div>
+              </div>
+              
+            </form>
           </div>
           
           <div class="col-lg-3 col-md-3 boxes" id="box-3">
             <div class="overlay-boxes">
-              <h3>Prenota</h3>
+              <h3 id="booking-button">Prenota</h3>
             </div>
           </div>
         
           <div class="col-lg-3 col-md-3 boxes" id="box-4">
           </div>
-        </div>
 
-        <div class="del-book-row is-hidden" id="delivery-row">
-          <div class="col-lg-12 col-md-12">
-            Prova
           </div>
         </div>
+
+        
         
       </div>
 
