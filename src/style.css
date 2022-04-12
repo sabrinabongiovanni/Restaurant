@@ -1,6 +1,6 @@
 /*structure and general */
 #main-container {
-  padding: 0px 0px 20px 0px;
+  padding: 0px 0px 55px 0px;
   background-color: #e5e5e5;
 }
 
@@ -363,7 +363,7 @@ label {
 /* Footer */
 footer {
   background-color: #14213d;
-  padding: 30px 70px;
+  padding: 30px 120px;
 }
 
 h4 {
@@ -373,12 +373,16 @@ h4 {
   margin: 20px 0px;
 }
 
+.icon-col {
+  margin-right: -18px;
+}
+
 .footer-text {
   font-family: Nunito;
   color:#e5e5e5;
   font-size: 14px;
   line-height: 2;
-  padding-right: 35px;
+  padding-right: 75px;
   text-align: justify;
 }
 
