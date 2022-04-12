@@ -283,7 +283,7 @@ li {
 
 h3 {
   color:#fca311;
-  font-size: 30px;
+  font-size: 40px;
   font-family: Parisienne;
   line-height: 300px;
   transition: all 200ms ease-in-out;
@@ -360,92 +360,31 @@ label {
   font-weight: 700;
 }
 
-
-/*
-ul .delivery-booking-grid {
-  margin: 0;
-  padding: 0;
+/* Footer */
+footer {
+  background-color: #14213d;
+  padding: 30px 70px;
 }
 
-ul .delivery-booking-grid li {
-  list-style: none;
-}
-
-ul .delivery-booking-grid li >* {
-  margin: 1rem;
-}
-
-:focus {
-  box-shadow: 0 0 0 0.25rem black;
-}
-
-.delivery-booking-grid {
-  display:grid;
-  gap: 1rem;
-  grid-auto-flow: dense;
-  grid-template-columns: repeat(auto-fit, 20rem);
-  justify-content: center;
-}
-
-.delivery-booking-grid > * {
-  align-items: flex-start;
-  background: red;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
-.fullwidth {
-  grid-column: 1 / -1;
-}
-
-.is-hidden {
-  display: none;
-}
-
-.fullwidth, .is-selected {
-  background-color: aquamarine;
-}
-*/
-
-/* https://css-tricks.com/expandable-sections-within-a-css-grid/ */
-
-/*
-.delivery-booking-wrapper {
-  margin: 50px 155px;
-}
-
-.delivery-booking-wrapper h2 {
-  font-size: 35px;
-  margin: 0px auto 40px auto;
-}
-
-.delivery-booking-cells {
-  padding: 35px 70px;
-  text-align: center;
-}
-
-#booking-table {
-  background-color: rgba(255,255,255, 0.5);
-}
-
-.delivery-text {
+h4 {
+  font-family: Lora;
+  color:#fca311;
   font-size: 18px;
+  margin: 20px 0px;
+}
+
+.footer-text {
   font-family: Nunito;
-  margin: 0px auto;
+  color:#e5e5e5;
+  font-size: 14px;
+  line-height: 2;
+  padding-right: 35px;
+  text-align: justify;
 }
 
-#phone-number {
-  font-size: 20px;
-  font-weight: 100;
-  margin-bottom: 20px;
+.footer-icons {
+  width:15px;
 }
-
-.app-icon {
-  max-width:30px;
-  margin: 0px 5px;
-}
-*/
 
 
 /* keyframes */
