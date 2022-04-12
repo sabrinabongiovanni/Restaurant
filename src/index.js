@@ -30,6 +30,7 @@ function showSlides() {
 
 let deliveryButton = document.querySelector("#delivery-button");
 let bookingButton = document.querySelector("#booking-button");
+let menuBookingButton = document.querySelector("#link-prenota");
 
 let delivery = "delivery";
 let booking = "booking";
@@ -40,11 +41,15 @@ deliveryButton.addEventListener("click", function () {
 bookingButton.addEventListener("click", function() {
   showFullwidthBox(booking)
 });
+menuBookingButton.addEventListener("click", function() {
+  showFullwidthBox(booking)
+});
+
+let deliveryBox = document.querySelector("#delivery-box");
+let bookingBox = document.querySelector("#booking-box");
+let boxes = document.querySelectorAll(".boxes");
 
 function showFullwidthBox(actionType) {
-  let deliveryBox = document.querySelector("#delivery-box");
-  let bookingBox = document.querySelector("#booking-box");
-  let boxes = document.querySelectorAll(".boxes");
   if (actionType == "delivery") {
     deliveryBox.classList.toggle('is-hidden');
   } else {
@@ -62,6 +67,18 @@ function showFullwidthBox(actionType) {
         console.log("ciao");
       }
     }
+  }
+}
+
+let closeButton = document.querySelectorAll(".close").forEach(closeButton => {
+  closeButton.addEventListener("click", closeBox);});
+
+
+function closeBox() {
+  deliveryBox.classList.add('is-hidden');
+  bookingBox.classList.add('is-hidden');
+  for(var i = 0; i < boxes.length; i++) {
+  boxes[i].classList.remove('is-hidden');
   }
 }
 
