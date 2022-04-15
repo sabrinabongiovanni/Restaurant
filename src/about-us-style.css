@@ -84,3 +84,82 @@
 }
 
 /* dicono di noi */
+
+.container.dicono-di-noi {
+  width: 100%;
+  background-color: #14213d;
+}
+
+.row.dicono-di-noi {
+  margin-bottom: 50px;
+}
+
+
+.testimonial-container {
+  position: relative;
+  background: #f1f1f1f1;
+}
+
+.slides {
+  padding: 45px 220px;
+  text-align: center;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #fca311;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  color: white;
+}
+
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: #ddd;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #fca311;
+}
+
+.card-title {
+  font-family: Nunito;
+  color: #14213d;
+  font-weight: bold;
+}
+
+.card-text {
+  font-family: Nunito;
+}

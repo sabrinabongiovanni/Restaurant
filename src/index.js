@@ -6,7 +6,8 @@ window.addEventListener("scroll", function() {
     logo.classList.toggle("scrolling-active-logo", window.scrollY > 50)
 })
 
-let slideIndex = 0;
+
+var slideIndex = 0;
 showSlides();
 
 function showSlides() {
@@ -89,4 +90,36 @@ bookTableButton.addEventListener("click", bookTable);
 function bookTable(event) {
   event.preventDefault;
   alert("Grazie per la prenotazione, ti contatteremo al più presto per confermare!")
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("slides");
+  var dots = document.getElementsByClassName("dot");
+  var first = document.getElementsByClassName("first");
+
+  if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    if (i=0) {
+      slides[i].style.display = "block";
+    }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
 }
