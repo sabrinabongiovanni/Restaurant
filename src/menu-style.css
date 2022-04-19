@@ -1,0 +1,59 @@
+/*** header ***/
+.menu-page-header-container {
+  height: 50vh;
+  width: 100%;
+  background-image: url(../images/restaurant-homepage.jpg);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+  
+.menu-page-header-overlay {
+  background-color: rgba(20, 33, 61, 0.65);
+  height: 50vh;
+  width: 100%;
+}
+
+.header-text-container {
+  width: 100%;
+  margin: 0px auto;
+}
+
+.header-text-container h1 {
+  font-family: Lora;
+  color: #e5e5e5;
+  font-size: 65px;
+  text-align: center;
+  line-height: 50px;
+  margin: 235px auto 30px; 
+}
+
+/*** Accordion ***/
+
+.menu-grid-container {
+  margin: 30px auto 50px;
+}
+
+.menu-grid-col {
+  padding: 5px 10px;
+}
+
+h4.accordion-header {
+  font-family: Lora;
+  color: #14213d;
+  text-align: center;
+}
+
+a.accordion-trigger {
+  color:#14213d;
+  text-decoration: none;
+}
+
+.accordion-arrow {
+  font-size: 10px;
+}
+
+.hidden-menu {
+  display: none;
+}

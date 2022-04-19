@@ -83,6 +83,7 @@ function closeBox() {
   }
 }
 
+/* Book table alert */
 let bookTableButton = document.querySelector("#book-table-button");
 
 bookTableButton.addEventListener("click", bookTable);
@@ -91,6 +92,8 @@ function bookTable(event) {
   event.preventDefault;
   alert("Grazie per la prenotazione, ti contatteremo al più presto per confermare!")
 }
+
+/*** Page about us - Slider dicono di noi ***/
 
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -132,3 +135,7 @@ function showSlides(n) {
   slides[slideIndex].style.display = "block";}
 
   }
+
+  /*** Pagina menu - Show menu ***/
+
+ /**let menuItem = document. */ 
