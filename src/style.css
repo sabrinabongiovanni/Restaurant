@@ -30,7 +30,6 @@ h2 {
 }
 
 
-/* nav bar */
 
 /* */
 
@@ -44,6 +43,7 @@ h2 {
   align-items: center;
   background-color: rgb(20,33,61);
   z-index: 9;
+  flex-wrap: no-wrap;
 }
 
 .custom-row {
@@ -51,7 +51,8 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0px 115px;
+  margin: 0px 85px;
+  flex-wrap: no-wrap;
 }
 
 .logo-small {
@@ -391,7 +392,7 @@ h4 {
 }
 
 .icon-col {
-  margin-right: -18px;
+  margin-right: -5px;
 }
 
 .footer-text {

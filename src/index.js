@@ -65,7 +65,6 @@ function showFullwidthBox(actionType) {
     } else {
       if (i != 2) {
         boxes[i].classList.toggle('is-hidden');
-        console.log("ciao");
       }
     }
   }
@@ -133,9 +132,4 @@ function showSlides(n) {
   if (slideIndex > 0) {
   slides[(slideIndex)-1].style.display = "block";} else {
   slides[slideIndex].style.display = "block";}
-
   }
-
-  /*** Pagina menu - Show menu ***/
-
- /**let menuItem = document. */ 

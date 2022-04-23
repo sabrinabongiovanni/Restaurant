@@ -3,6 +3,7 @@
   height: 50vh;
   width: 100%;
   background-image: url(../images/restaurant-homepage.jpg);
+  background-position: center;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -26,7 +27,7 @@
   font-size: 65px;
   text-align: center;
   line-height: 50px;
-  margin: 235px auto 30px; 
+  margin: 180px auto 30px; 
 }
 
 /*** Accordion ***/
@@ -39,21 +40,110 @@
   padding: 5px 10px;
 }
 
-h4.accordion-header {
+h4.menu-header {
   font-family: Lora;
   color: #14213d;
   text-align: center;
 }
 
-a.accordion-trigger {
+a.brunch-menu-trigger, a.lunch-menu-trigger, a.dinner-menu-trigger {
   color:#14213d;
   text-decoration: none;
+  font-weight: bolder;
+  transition: all 300ms ease-in-out;
+  appearance: button;
+  border: 0.5px solid rgba(20, 33, 61, 0.2);
+  padding: 20px 30px;
+  transition: all 400ms ease-in-out;
 }
 
-.accordion-arrow {
-  font-size: 10px;
+a.brunch-menu-trigger:hover, a.lunch-menu-trigger:hover, a.dinner-menu-trigger:hover {
+  background-color: #fca311;
+  color:white;
+  cursor: pointer;
 }
 
 .hidden-menu {
   display: none;
 }
+
+.full-menu {
+  padding: 30px 40px;
+  text-align: center;
+  margin: 20px 0px;
+}
+
+h5.menu-title {
+  font-family: Parisienne;
+  font-size: 43px;
+  color:#fca311;
+  margin-bottom: 20px;
+}
+
+hr.menu-divider {
+  border: none;
+  height: 1.5px;
+  background-color: white;
+  background-image: linear-gradient(to right, rgba(20, 33, 61, 0), rgba(20, 33, 61, 1),  rgba(20, 33, 61, 1), rgba(20, 33, 61, 0));
+} 
+
+.menu-items-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu-item {
+  flex-basis: 50%;
+  padding: 25px 45px;
+}
+
+h6.dish-title {
+  font-family: 'Parisienne';
+  font-size: 30px;
+  font-weight: 500;
+  text-shadow: 1px 1px 1px rgb(0 0 0 / 19%);
+  color: #14213d;
+  margin: 10px auto;
+}
+
+p.dish-description, p.dish-price {
+  font-family: 'Lora';
+  color: #14213d;
+}
+
+p.dish-description {
+    font-size: 15px;
+    font-weight: 500;
+    margin: 5px auto;
+}
+
+/***Prenota tavolo***/
+
+#booking-button {
+  appearance: button;
+  display: block;
+  width: 250px;
+  margin: 20px auto 50px;
+  text-align: center;
+  box-shadow: 4px 6px 10px rgb(0 0 0 / 30%);
+  padding: 13px 15px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: white;
+  background: #14213d;
+  transition: all 200ms ease-in-out;
+}
+
+#booking-button:hover {
+  cursor: pointer;
+  background: #fca311;
+  color:#14213d;
+}
+
+
+
+
+
+
+
+
