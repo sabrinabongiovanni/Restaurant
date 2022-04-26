@@ -1,0 +1,49 @@
+/*** header ***/
+.menu-page-header-container {
+  height: 50vh;
+  width: 100%;
+  background-image: url(../../images/restaurant-homepage.jpg);
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+  
+.menu-page-header-overlay {
+  background-color: rgba(20, 33, 61, 0.65);
+  height: 50vh;
+  width: 100%;
+}
+
+.header-text-container {
+  width: 100%;
+  margin: 0px auto;
+}
+
+.header-text-container h1 {
+  font-family: Lora;
+  color: #e5e5e5;
+  font-size: 65px;
+  text-align: center;
+  line-height: 50px;
+  margin: 180px auto 30px; 
+}
+
+/*** tabella contattaci ***/
+.contact-us-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact-us-item {
+  flex-basis: 33%;
+}
+
+#image-container {
+  background-image: url(../../images/gallery-5.jpg);
+}
+
+.hidden {
+  display: none;
+}

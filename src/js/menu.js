@@ -1,3 +1,13 @@
+/*navbar*/
+window.addEventListener("scroll", function() {
+    let navbar = document.querySelector(".custom-row");
+    let logo = document.querySelector(".logo-small")
+
+    navbar.classList.toggle("scrolling-active", window.scrollY > 50);
+    logo.classList.toggle("scrolling-active-logo", window.scrollY > 50);
+});
+
+/* menu section */
 let brunchMenuTrigger = document.querySelector(".brunch-menu-trigger");
 let lunchMenuTrigger = document.querySelector(".lunch-menu-trigger");
 let dinnerMenuTrigger = document.querySelector(".dinner-menu-trigger");

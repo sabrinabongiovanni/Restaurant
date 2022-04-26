@@ -106,7 +106,7 @@ li {
 /* Header */
 
 .bg-overlay {
-  background: linear-gradient(rgba(12, 21, 41, 0.8), rgba(20,33,61,.6)), url("../images/restaurant-homepage.jpg");
+  background: linear-gradient(rgba(12, 21, 41, 0.8), rgba(20,33,61,.6)), url("../../images/restaurant-homepage.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -265,19 +265,19 @@ li {
 }
 
 #box-1 {
-  background-image: url(../images/box-1.jpg);
+  background-image: url(../../images/box-1.jpg);
 }
 
 #box-2 {
-  background-image: url(../images/box-2.jpg);
+  background-image: url(../../images/box-2.jpg);
 }
 
 #box-3 {
-  background-image: url(../images/box-3.jpg);
+  background-image: url(../../images/box-3.jpg);
 }
 
 #box-4 {
-  background-image: url(../images/box-4.jpg);
+  background-image: url(../../images/box-4.jpg);
 }
 
 .overlay-boxes {
@@ -417,19 +417,19 @@ h4 {
 
 @keyframes animate {
   0%, 100% {
-    background-image: url(../images/restaurant-slideshow-1.jpg)
+    background-image: url(../../images/restaurant-slideshow-1.jpg)
   }
 
   25% {
-    background-image: url(../images/restaurant-slideshow-2.jpg)
+    background-image: url(../../images/restaurant-slideshow-2.jpg)
   }
 
   50% {
-    background-image: url(../images/restaurant-slideshow-3.jpg)
+    background-image: url(../../images/restaurant-slideshow-3.jpg)
   }
 
   75% {
-    background-image: url(../images/restaurant-slideshow-4.jpg)
+    background-image: url(../../images/restaurant-slideshow-4.jpg)
   }
 }
 

@@ -2,7 +2,7 @@
 .menu-page-header-container {
   height: 50vh;
   width: 100%;
-  background-image: url(../images/restaurant-homepage.jpg);
+  background-image: url(../../images/restaurant-homepage.jpg);
   background-position: center;
   display: flex;
   justify-content: center;
