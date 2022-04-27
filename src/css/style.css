@@ -384,6 +384,16 @@ footer {
   width: 100%;
 }
 
+.footer-row {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-col {
+  flex-basis: 33%;
+}
+
 h4 {
   font-family: Lora;
   color:#fca311;
@@ -492,6 +502,102 @@ h4 {
     background-color:#14213d;
     color:#fca311;
   }
+
+  .del-book-row {
+    flex-wrap: wrap;
+  }
+
+  #box-2, #box-4 {
+    display: none;
+  }
+
+  #box-1, #box-3 {
+    height: 100px;
+    width: 90%;
+  }
+
+  .overlay-boxes{
+    height: 100px;
+  }
+
+  .fullwidth-column {
+    max-height: fit-content;
+  }
+
+  h3#delivery-button, h3#booking-button {
+    line-height: 100px;
+    font-size: 30px;
+  }
+
+  h3:hover {
+    font-size: 35px;
+    line-break:normal;
+  }
+
+  .delivery-booking-title {
+    font-size: 25px;
+  }
+
+  .close {
+    margin: -20px -25px;
+  }
+
+  .close-button {
+    font-size: 23px;
+  }
+
+  .delivery-text {
+    font-size: 15px;
+  }
+
+  #phone-number {
+    font-size: 16px;
+  }
+
+  #booking-box p {
+    font-size: 15px;
+    text-align: justify;
+  }
+
+  #form-row {
+    display: flex;
+    flex-wrap: wrap;
+  }  
+
+  .form-col {
+    margin-top: 5px
+  }
+
+  .button-col {
+    text-align: center;
+  }
+  
+  #book-table-button {
+    margin: 25px auto 0px;
+  }
+
+  footer {
+    padding: 30px 30px;
+  }
+
+  .footer-col {
+    flex-grow: 100;
+  }
+
+  h4 {
+    text-align: center;
+  }
+
+  .footer-text {
+    font-size: 14px;
+    padding-right: 0px;
+    line-height: 1.75;
+  }
+
+  .footer-contact-us-row {
+    flex-wrap: nowrap;
+  }
+
 }
 
 @media screen and (min-width:375px) and (max-width:424px) {
