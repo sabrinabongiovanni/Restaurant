@@ -7,6 +7,20 @@ window.addEventListener("scroll", function() {
     logo.classList.toggle("scrolling-active-logo", window.scrollY > 50);
 });
 
+let menuTrigger = document.querySelector(".menu-trigger")
+menuTrigger.addEventListener("click", showMenu)
+
+let menu = document.querySelector("ul");
+let menuSection = document.getElementById("navbar-menu-section");
+
+function showMenu() {
+  if (menu.style.display == "block") {
+    menu.style.display = "none";
+  } else {
+    menu.style.display = "block";
+  }
+}
+
 /* menu section */
 let brunchMenuTrigger = document.querySelector(".brunch-menu-trigger");
 let lunchMenuTrigger = document.querySelector(".lunch-menu-trigger");
