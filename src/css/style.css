@@ -211,15 +211,18 @@ li {
   animation: animate 16s ease-in-out infinite;
   background-size: cover;
   background-position: 50%;
+  display: flex;
 } 
 
 .outer {
   height: 600px;
   background: rgba(12, 21, 41, 0.8);
+  display: flex;
 }
 
 .details {
   text-align: center;
+  flex-basis: fit-content;
 }
 
 #about-us {
@@ -581,7 +584,7 @@ h4 {
   }
 
   .footer-col {
-    flex-grow: 100;
+    flex-basis: 100%;
   }
 
   h4 {
@@ -592,12 +595,12 @@ h4 {
     font-size: 14px;
     padding-right: 0px;
     line-height: 1.75;
+    margin: 3.5px auto;
   }
 
   .footer-contact-us-row {
     flex-wrap: nowrap;
   }
-
 }
 
 @media screen and (min-width:375px) and (max-width:424px) {
@@ -674,10 +677,105 @@ h4 {
     width: 150px;
   }
 
+  .del-book-row {
+    flex-wrap: wrap;
+  }
+
+  #box-2, #box-4 {
+    display: none;
+  }
+
+  #box-1, #box-3 {
+    height: 100px;
+    width: 90%;
+  }
+
+  .overlay-boxes{
+    height: 100px;
+  }
+
+  .fullwidth-column {
+    max-height: fit-content;
+  }
+
+  h3#delivery-button, h3#booking-button {
+    line-height: 100px;
+    font-size: 30px;
+  }
+
+  h3:hover {
+    font-size: 35px;
+    line-break:normal;
+  }
+
+  .delivery-booking-title {
+    font-size: 25px;
+  }
+
+  .close {
+    margin: -20px -25px;
+  }
+
+  .close-button {
+    font-size: 23px;
+  }
+
+  .delivery-text {
+    font-size: 15px;
+  }
+
+  #phone-number {
+    font-size: 16px;
+  }
+
+  #booking-box p {
+    font-size: 15px;
+    text-align: justify;
+  }
+
+  #form-row {
+    display: flex;
+    flex-wrap: wrap;
+  }  
+
+  .form-col {
+    margin-top: 5px
+  }
+
+  .button-col {
+    text-align: center;
+  }
+  
+  #book-table-button {
+    margin: 25px auto 0px;
+  }
+
+  footer {
+    padding: 30px 30px;
+  }
+
+  .footer-col {
+    flex-basis: 100%;
+  }
+
+  h4 {
+    text-align: center;
+  }
+
+  .footer-text {
+    font-size: 14px;
+    padding-right: 0px;
+    line-height: 1.75;
+    margin: 3.5px auto;
+  }
+
+  .footer-contact-us-row {
+    flex-wrap: nowrap;
+  }
+
 }
 
 @media screen and (min-width:425px) and (max-width:767px) {
-  
   .logo-small {
     width: 250px;
   }
@@ -748,6 +846,110 @@ h4 {
     padding: 10px 10px;
     width: 150px;
     font-size: 14px;
+  }
+
+  .del-book-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .boxes {
+    width: 150px;
+    height: 150px;
+  }
+
+  .overlay-boxes{
+    width: 150px;
+    height: 150px;
+  }
+
+  h3 {
+    line-height: 150px;
+    font-size: 30px;
+  }
+
+  h3:hover {
+    font-size:35px;
+  }
+
+  .fullwidth-column {
+    width: 90%;
+    margin-top: 20px;
+  }
+
+  .delivery-booking-title {
+    font-size: 30px;
+  }
+
+  .close {
+    margin: -20px -25px;
+  }
+
+  .close-button {
+    font-size: 23px;
+  }
+
+  .delivery-text {
+    font-size: 17px;
+  }
+
+  #phone-number {
+    font-size: 18px;
+  }
+
+  #booking-box {
+    max-height: fit-content;
+    margin-bottom: 20px;
+  }
+
+  #booking-box p {
+    font-size: 15px;
+    text-align: justify;
+  }
+
+  #form-row {
+    display: flex;
+    flex-wrap: wrap;
+  }  
+
+  .form-col {
+    margin-top: 5px
+  }
+
+  .button-col {
+    text-align: center;
+  }
+  
+  #book-table-button {
+    margin: 25px auto 0px;
+  }
+
+  footer {
+    padding: 30px 50px;
+  }
+
+  .footer-col {
+    flex-basis: 100%;
+  }
+
+  h4 {
+    text-align: center;
+  }
+
+  .footer-text {
+    font-size: 14px;
+    padding-right: 0px;
+    line-height: 1.75;
+    margin: 3.5px auto;
+  }
+
+  .footer-contact-us-row {
+    flex-wrap: nowrap;
+  }
+
+  .footer-time {
+    text-align: center;
   }
 }
 
@@ -836,6 +1038,86 @@ h4 {
 
   .outer {
     height:720px;
+  }
+
+  .del-book-row {
+    gap: 20px;
+  }
+
+  .boxes {
+    width: 150px;
+    height: 250px;
+  }
+
+  .overlay-boxes {
+    width: 150px;
+    height: 250px;
+  }
+
+  h3 {
+    line-height: 250px;
+    font-size: 30px;
+  }
+
+  h3:hover {
+    font-size:35px;
+  }
+
+  .fullwidth-column {
+    max-height: 250px;
+  }
+
+  .delivery-booking-title {
+    font-size: 25px;
+  }
+
+  .delivery-text {
+    font-size: 16px;
+    margin: -18px auto
+  }
+
+  #phone-number {
+    font-size: 17px;
+    margin-top: -1px;
+  }
+
+  #booking-box p {
+    font-size: 14px;
+    margin-bottom: 3px;
+  }
+
+  #booking-box .delivery-booking-title {
+    margin-bottom: 3px;
+  }
+
+  #form-row {
+    margin: 3px 0px;
+  }
+
+  .form-control {
+    line-height: 1;
+    font-size: 14px;
+  }
+  label {
+    font-size: 10px;
+  }
+
+  .button-col {
+    margin-right: 45px;
+  }
+
+  #book-table-button {
+    font-size: 12px;
+    width: 105px;
+  }
+
+  footer {
+    padding: 30px 40px;
+  }
+
+  .footer-text {
+    padding-right: 30px;
+    font-size: 13px;
   }
 }
 

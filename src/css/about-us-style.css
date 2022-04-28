@@ -7,12 +7,14 @@
   justify-content: center;
   text-align: center;
   align-items: center;
+  display: flex;
 }
 
 .header-overlay {
   background-color: rgba(20, 33, 61, 0.65);
   height: 100vh;
   width: 100%;
+  display: flex;
 }
 
 .header-text-container {
@@ -59,6 +61,17 @@
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.grid-column {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.grid-item {
+  margin: 29px -50px;
+  flex-basis: 25%;
 }
 
 .gallery-images {
@@ -160,4 +173,32 @@
 .card-text {
   font-family: Nunito;
   padding: 0px 50px 30px;
+}
+
+@media screen and (max-width:374px) {
+  .header-text-container {
+    flex-basis: fit-content;
+  } 
+
+  .header-text-container h1 {
+    font-size: 35px;
+    margin: 80% auto 30px;
+  }
+
+  .header-text-container p {
+    font-size: 15px;
+    padding: 0px 30px;
+  }
+  
+  .gallery-grid {
+    text-align: center;
+  }
+  
+  .grid-column {
+    flex-basis: 100%;
+  }
+
+  .grid-item {
+    margin:0px;
+  }
 }
