@@ -672,7 +672,7 @@ h4 {
   #navbar-menu-section {
     flex-basis: 100%;
     position: absolute;
-    top: 44px;
+    top: 55px;
     width: 100%;
     background-color: #14213d;
   }
@@ -706,7 +706,7 @@ h4 {
   }
 
   .scrolling-active #navbar-menu-section {
-    top: 38px;
+    top: 47px;
     transition: all 200ms ease-in;
   }
 
@@ -888,6 +888,7 @@ h4 {
 
   li {
     margin: 0px 5px;
+    font-weight: normal;
   }
 
   .burger-icon {
@@ -1121,13 +1122,13 @@ h4 {
   }
 
   .scrolling-active #navbar-menu-section {
-    top: 58px;
+    top: 56px;
     transition: all 200ms ease-in;
   }
 
 
   .scrolling-active-logo {
-    width: 35%;
+    width: 60%;
     transition: all 300ms ease-in-out;
 }
 
@@ -1286,6 +1287,7 @@ h4 {
 
   li {
     margin: 0px 10px;
+    font-weight: 300;
   }
 
   .scrolling-inactive {
@@ -1300,9 +1302,9 @@ h4 {
     padding-top: 10px;
     transition: all 300ms ease-in-out;
   }
-  
+
   .scrolling-active-logo {
-    width: 40%;
+    width: 150px;
     transition: all 300ms ease-in-out;
   }
   
