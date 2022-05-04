@@ -8,6 +8,7 @@
   justify-content: center;
   text-align: center;
   align-items: center;
+  flex-basis: fit-content;
 }
   
 .menu-page-header-overlay {
@@ -74,8 +75,6 @@
 }
 
 .contact-us-column h2#blue-title {
-  font-family: Nunito;
-  font-size: 27px;
   color: #14213d;
 }
 
@@ -102,4 +101,96 @@ p.contact-us-text {
 }
 .location {
   margin: 0px auto 20px;
+}
+
+@media screen and (max-width:424px) {
+  .header-text-container h1 {
+    font-size: 45px;
+    margin: 45% auto 30px;
+  }
+
+  .contact-us-column {
+    flex-basis: 100%;
+  }
+
+  .contact-us-item#image-container {
+    flex-basis: 100%;
+    display: block;
+    height: 160px;
+    margin: 0px 20px;
+    background-clip: unset;
+  }
+}
+
+@media screen and (min-width: 425px) and (max-width:767px) {
+  .header-text-container h1 {
+    font-size: 60px;
+    margin: 35% auto 30px;
+  }
+
+  .contact-us-column {
+    flex-basis: 50%;
+  }
+
+  .contact-us-column h2 {
+    font-size: 23px;
+  }
+
+  .social-icons {
+    width: 25px;
+    margin: 20px 5px;
+  }
+
+  p.contact-us-text {
+    font-size: 12px;
+  }
+
+  .contact-us-item#image-container {
+    flex-basis: 100%;
+    display: block;
+    height: 160px;
+    margin: 0px 20px;
+    background-clip: unset;
+  }
+
+  .contact-us-item {
+    min-height: 160px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width:1023px) {
+  .header-text-container h1 {
+    font-size: 60px;
+    margin: 21% auto 30px;
+  }
+
+  .contact-us-item#image-container {
+    flex-basis: 100%;
+    display: block;
+    height: 160px;
+    margin: 0px 20px;
+    background-clip: unset;
+  }
+
+  .contact-us-item {
+    min-height: 120px;
+  }
+}
+
+@media screen and (min-width:1024px) and (max-width:1439px) {
+  .header-text-container h1 {
+    font-size: 60px;
+    margin: 16% auto 30px;
+  }
+
+  .contact-us-item {
+    min-height: 120px;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .header-text-container h1 {
+    font-size: 60px;
+    margin: 12% auto 30px;
+  }
 }

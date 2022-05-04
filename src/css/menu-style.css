@@ -8,6 +8,7 @@
   justify-content: center;
   text-align: center;
   align-items: center;
+  flex-basis: fit-content;
 }
   
 .menu-page-header-overlay {
@@ -36,8 +37,20 @@
   margin: 30px auto 50px;
 }
 
+.menu-grid-row {
+  width: 100%;
+  justify-content: space-evenly;
+  margin: 0px auto;
+  flex-wrap: nowrap;
+}
+
 .menu-grid-col {
   padding: 5px 10px;
+  flex-basis: 33%;
+}
+
+.full-menu-col {
+  flex-basis: 100%;
 }
 
 h4.menu-header {
@@ -140,9 +153,145 @@ p.dish-description {
   color:#14213d;
 }
 
+@media screen and (max-width:424px) {
+  .header-text-container h1 {
+    font-size: 45px;
+    margin: 45% auto 30px;
+  }
 
+  .menu-grid-container {
+    margin: 30px auto 20px;
+  }
 
+  a.brunch-menu-trigger, a.lunch-menu-trigger, a.dinner-menu-trigger {
+    font-size: 13px;
+    padding: 15px 20px;
+  }
 
+  .full-menu {
+    padding: 20px 0px 0px;
+    margin: 0px;
+  }
+
+  .menu-item {
+    flex-basis: 100%;
+    padding: 15px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width:425px) and (max-width:767px) {
+  .header-text-container h1 {
+    font-size: 60px;
+    margin: 35% auto 30px;
+  }
+
+  .menu-grid-container {
+    margin: 30px auto 20px;
+  }
+
+  a.brunch-menu-trigger, a.lunch-menu-trigger, a.dinner-menu-trigger {
+    font-size: 16px;
+    padding: 15px 20px;
+  }
+
+  .full-menu {
+    padding: 20px 0px 0px;
+    margin: 0px;
+  }
+
+  .menu-item {
+    flex-basis: 100%;
+    padding: 15px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+  .header-text-container h1 {
+    font-size: 60px;
+    margin: 21% auto 30px;
+  }
+
+  .menu-grid-container {
+    margin: 30px auto 20px;
+  }
+
+  a.brunch-menu-trigger, a.lunch-menu-trigger, a.dinner-menu-trigger {
+    padding: 15px 20px;
+  }
+
+  .full-menu {
+    padding: 20px 0px 0px;
+    margin: 0px;
+  }
+
+  .menu-item {
+    flex-basis: 50%;
+    padding: 15px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width:1024px) and (max-width:1439px) {
+  .header-text-container h1 {
+    font-size: 60px;
+    margin: 16% auto 30px;
+  }
+
+  .menu-grid-container {
+    margin: 30px auto 20px;
+  }
+
+  a.brunch-menu-trigger, a.lunch-menu-trigger, a.dinner-menu-trigger {
+    padding: 15px 20px;
+  }
+
+  .full-menu {
+    padding: 20px 0px 0px;
+    margin: 0px;
+  }
+
+  .menu-item {
+    flex-basis: 50%;
+    padding: 15px;
+    text-align: center;
+  }
+
+  p.dish-description {
+    padding: 0px 30px;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .header-text-container h1 {
+    font-size: 60px;
+    margin: 12% auto 30px;
+  }
+
+  .menu-grid-container {
+    margin: 30px auto 20px;
+  }
+
+  a.brunch-menu-trigger, a.lunch-menu-trigger, a.dinner-menu-trigger {
+    padding: 15px 20px;
+  }
+
+  .full-menu {
+    padding: 20px 120px 0px;
+    margin: 0px;
+  }
+
+  .menu-item {
+    flex-basis: 50%;
+    padding: 15px;
+    text-align: center;
+  }
+
+  p.dish-description {
+    padding: 0px 80px;
+  }
+}
 
 
 
