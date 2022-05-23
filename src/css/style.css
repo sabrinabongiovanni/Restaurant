@@ -429,6 +429,19 @@ h4 {
   width:15px;
 }
 
+.credits {
+  width: 100%;
+}
+.credits p {
+  color: white;
+  opacity: 0.5;
+  font-family: Nunito;
+  font-size: 11px;
+  margin-bottom: 0px;
+  margin-top: 20px;
+  text-align: right;
+}
+
 
 /* keyframes */
 @keyframes fade {
